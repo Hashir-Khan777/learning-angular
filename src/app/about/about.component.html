@@ -1,0 +1,9 @@
+<div>
+  <h1>{{ title }}</h1>
+  <h2>Params: {{ params }}</h2>
+  <div *ngFor="let param of queryParams | keyvalue">
+    <h2>QueryParams: {{ param.value }}</h2>
+  </div>
+  <a routerLink="/">home</a>
+  <a routerLink="/about/2">about</a>
+</div>
